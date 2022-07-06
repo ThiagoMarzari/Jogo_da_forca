@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h> 
+#include<stdbool.h>
 
 int main()
 {
@@ -39,7 +40,7 @@ int main()
         printf("\n\nDigite uma letra: ");
         scanf("%c", &letra); 
 
-        int errou = 1; 
+        bool errou = true;
         for(i = 0; i< strlen(underline); i++)
         {
             //Se a letra for igual a palavra do inicio
@@ -47,15 +48,12 @@ int main()
             {
                 //Substituindo o underline pela letra
                 underline[i] = letra;
-                errou = 0; //Se alguma for igual ele não errou
+                errou = false; //Se alguma for igual ele não errou
             }
         }
         system("cls");
 
-        if(errou == 1)
-        {
-            vida--;
-        } 
+        if(errou) vida--;
 
         /*
         if(underline == palavra)
@@ -80,11 +78,7 @@ int main()
     }
             system("pause");
 	return 0;
-
 }
-
-
-
 
 void Win()
 {
