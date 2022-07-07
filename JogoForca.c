@@ -43,7 +43,6 @@ int main()
         bool errou = true;
         for(i = 0; i< strlen(underline); i++)
         {
-            //Se a letra for igual a palavra do inicio
             if(letra == palavra[i]) 
             {
                 //Substituindo o underline pela letra
