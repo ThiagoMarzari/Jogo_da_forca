@@ -61,9 +61,9 @@ int main()
             break;
         }
         */
-
         //Player ganhou
-        if(strcmp(underline, palavra) == 0)
+        
+        if(strcmp(underline, palavra) == 0) // Comparação de strings
         {
             Win();
             break;
